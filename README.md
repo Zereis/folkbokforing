@@ -62,7 +62,7 @@ The frontend will be available at [http://localhost:3000](http://localhost:3000)
 
 ## Screenshots
 
-_Add screenshots here if you want!_
+![Screenshot](https://i.imgur.com/Fdn82JU.png)
 
 ## License
 
