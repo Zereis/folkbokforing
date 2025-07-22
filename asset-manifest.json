@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/folkbokforing/static/css/main.79ef3f34.css",
+    "main.js": "/folkbokforing/static/js/main.a675ff94.js",
+    "static/js/453.49716e0a.chunk.js": "/folkbokforing/static/js/453.49716e0a.chunk.js",
+    "index.html": "/folkbokforing/index.html",
+    "main.79ef3f34.css.map": "/folkbokforing/static/css/main.79ef3f34.css.map",
+    "main.a675ff94.js.map": "/folkbokforing/static/js/main.a675ff94.js.map",
+    "453.49716e0a.chunk.js.map": "/folkbokforing/static/js/453.49716e0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79ef3f34.css",
+    "static/js/main.a675ff94.js"
+  ]
+}
