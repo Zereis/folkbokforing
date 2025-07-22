@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PersonForm from './components/PersonForm';
+import PersonList from './components/PersonList';
+import HistoryLog from './components/HistoryLog';
+import { Person } from './types';
 
 function App() {
+  const [refresh, setRefresh] = React.useState(false);
+  const [editingPerson, setEditingPerson] = React.useState<Person | null>(null);
+
+  const refreshList = () => {
+    setRefresh(!refresh);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>Folkbokföringssystem</h1>
+      <PersonForm
+        refreshList={refreshList}
+        editingPerson={editingPerson}
+        cancelEdit={() => setEditingPerson(null)}
+      />
+      <PersonList
+        key={refresh.toString()}
+        onEdit={setEditingPerson}
+      />
+      <HistoryLog />
     </div>
   );
 }
